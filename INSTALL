@@ -1,0 +1,9 @@
+@link http://code.google.com/p/php-mysql-master-slave-replication-monitor/wiki/InstallationAndStandardUseCase
+
+==quick install==
+download package
+unzip to a web accessible folder
+(optionally htaccess password protect the directory)
+import the "create.util_replicaiton.sql" file
+	mysql -uroot -p -h DBMASTERHOST < create.util_replicaiton.sql
+
