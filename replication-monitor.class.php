@@ -324,7 +324,7 @@ class Replication {
 	* @return string $HTML
 	*/
 	function html($action=null) {
-		$action = (empty($action) && isset($_GET['action']) ? $_GET['action'] : '');
+		$action = (empty($action) && isset($_GET['action']) ? $_GET['action'] : $action);
 		$return = array();
 		if ($action=='Test' || $action=='monitor') {
 			// short response, to be used by a cron monitoring job perhaps
